@@ -23,7 +23,7 @@ defmodule Day2 do
 
   ## Examples
 
-    iex> Day2.checksum2("5 9 2 8\n9 4 7 3\n3 8 6 5\n")
+    iex> Day2.checksum2("5 9 2 8\\n9 4 7 3\\n3 8 6 5\\n")
     9
 
   """

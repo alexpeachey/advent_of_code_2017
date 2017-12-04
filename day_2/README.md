@@ -1,21 +1,29 @@
 # Day2
 
-**TODO: Add description**
+Part 1:
 
-## Installation
+The spreadsheet consists of rows of apparently-random numbers. To make sure the recovery process is on the right track, they need you to calculate the spreadsheet's checksum. For each row, determine the difference between the largest value and the smallest value; the checksum is the sum of all of these differences.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `day_2` to your list of dependencies in `mix.exs`:
+For Example:
 
-```elixir
-def deps do
-  [
-    {:day_2, "~> 0.1.0"}
-  ]
-end
+```
+5 1 9 5
+7 5 3
+2 4 6 8
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/day_2](https://hexdocs.pm/day_2).
+Checksum: 18
 
+Part 2:
+
+It sounds like the goal is to find the only two numbers in each row where one evenly divides the other - that is, where the result of the division operation is a whole number. They would like you to find those numbers on each line, divide them, and add up each line's result.
+
+For Example:
+
+```
+5 9 2 8
+9 4 7 3
+3 8 6 5
+```
+
+Checksum: 9
